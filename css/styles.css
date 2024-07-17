@@ -1,0 +1,113 @@
+.wrapper {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/bugatti.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(29, 31, 25, 0.288);
+}
+
+.open-modal {
+	border: none;
+	background-image: linear-gradient(to right, #da22ff 0%, #9733ee 51%, #da22ff 100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+	cursor: pointer;
+}
+
+.open-modal:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.modal-btn {
+	border: none;
+	cursor: pointer;
+	background-image: linear-gradient(to right, #603813 0%, #b29f94 51%, #603813 100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+}
+
+.modal-btn:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: calc(50% - 500px);
+	left: calc(50%- 500px);
+	z-index: 200;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.modal__inner {
+	max-width: 1000px;
+	max-height: 1000px;
+}
+
+.modal__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.modal__title {
+	display: inline-block;
+	color: yellow;
+	font-size: 48px;
+	font-weight: bold;
+	background: rgb(34, 193, 195);
+	background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.modal__text {
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.modal__bnt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal__icon {
+	cursor: pointer;
+}
+
+.open {
+	display: block;
+}
+
+.close {
+	display: none;
+}
